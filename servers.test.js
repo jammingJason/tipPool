@@ -11,6 +11,9 @@ describe('Servers test (with setup and tear-down)', function() {
 		expect(allServers['server' + serverId].serverName).toEqual('Alice');
 	});
 
+	
+
+
 	afterEach(function() {
 		// teardown logic
 		serverTbody.deleteRow(0);
