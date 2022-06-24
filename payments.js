@@ -57,10 +57,13 @@ function appendPaymentTable(curPayment) {
 	appendTd(newTr, curPayment.tipPercent + '%');
 	appendDeleteBtn(newTr);
 	paymentTbody.append(newTr);
+
+	// newTr.childElementCount();
 }
 
 function appendDeleteBtn(tr) {
 	let newTd = document.createElement('td');
+	newTd.id = 'xButton';
 	newTd.innerText = 'X';
 	tr.append(newTd);
 	newTd.style.cursor = 'pointer';
