@@ -71,8 +71,8 @@ function appendDeleteBtn(tr) {
 				const element = allPayments[key];
 				if (key === tr.id) {
 					// alert(key);
-					delete allPayments[key];
-					updateSummary();
+					// delete allPayments[key];
+					// updateSummary();
 				}
 			}
 		}
